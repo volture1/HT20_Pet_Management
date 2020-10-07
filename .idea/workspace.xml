@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c680ea1e-e79a-4060-8cc2-6629f174e8ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Carrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Carrot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Fish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/FishFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/FishFood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Food.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Hamster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Meat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Monkey.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,14 +22,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1752" />
-          <entry key="txt" value="116" />
+          <entry key="java" value="2668" />
+          <entry key="txt" value="150" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1752" />
-          <entry key="PLAIN_TEXT" value="116" />
+          <entry key="JAVA" value="2668" />
+          <entry key="PLAIN_TEXT" value="150" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -87,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/company/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="172">
+              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -221,7 +210,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602063649095" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602069088510" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -284,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602060139319</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added some structure in Game class">
+      <created>1602063653428</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602063653428</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -297,7 +293,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32952183" />
       <window_info anchor="bottom" id="Terminal" />
@@ -305,7 +301,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32952183" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -337,7 +333,8 @@
     <MESSAGE value="Test 1 line" />
     <MESSAGE value="Added project structure" />
     <MESSAGE value="Added class 'Food'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added class 'Food'" />
+    <MESSAGE value="Added some structure in Game class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some structure in Game class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/company/Store.java">
@@ -440,8 +437,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/company/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="172">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
         </state>
       </provider>
     </entry>
