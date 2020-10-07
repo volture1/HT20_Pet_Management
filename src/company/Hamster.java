@@ -1,4 +1,4 @@
 package company;
 
-public class Hamster {
+public class Hamster extends Animal {
 }

@@ -1,4 +1,4 @@
 package company;
 
-public class Carrot {
+public class Carrot extends Food {
 }

@@ -1,4 +1,4 @@
 package company;
 
-public class Food {
+public abstract class Food {
 }
