@@ -1,16 +1,20 @@
 package company;
 
 public abstract class Animal {
-    private int animalHealth;
-    private String animalName,animalGender;
+    private int health;
+    private String name,gender;
 
     public Animal(int health, String name, String gender ){
-        animalHealth = health;
-        animalName = name;
-        animalGender = gender;
+        this.health = health;
+        this.name = name;
+        this.gender = gender;
     }
 
-    public getHealth(int health){
-        health = animalHealth;
+    public void getHealth(int health){
+        health = this.health;
+    }
+
+    public void getName(){
+        System.out.println(this.name);
     }
 }

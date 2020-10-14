@@ -10,4 +10,12 @@ public class Player {
     public int getCash() {
         return playerCash;
     }
+
+    public void setPlayerName(String playerName) {
+        this.playerName = playerName;
+    }
+
+    public String getPlayerName() {
+        return playerName;
+    }
 }
