@@ -62,6 +62,7 @@ public class Game {
     }
     static void gameLoop(){
         Scanner input = new Scanner(System.in);
+        Dialogs dialog = new Dialogs();
         Store store = new Store();
         System.out.println("[1] Purchase Animal\n" +
                            "[2] Purchase Food\n" +
@@ -99,7 +100,10 @@ public class Game {
                 //Nothing here, just to stop the loop.
                 //However the loop will only run once now per player, which is as intended?
                 break;
+
         }
+        String rep = "\n";
+        System.out.print(rep.repeat(60));
 
     }
 

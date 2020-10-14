@@ -6,12 +6,12 @@ public class Dialogs {
 
     static private Scanner scanner = new Scanner(System.in);
 
-    /*static public void clear(){
+    /*static public void clear() {
         // "clear" the console by printing 60 new lines
         System.out.println("\n".repeat(60));
-    }*/
 
-    static public String prompt(String question){
+    }*/
+     static public String prompt(String question){
         // clear() ? maybe we want a clear before each prompt
         System.out.println(question);
         return scanner.nextLine();
