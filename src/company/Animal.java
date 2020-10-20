@@ -17,4 +17,7 @@ public abstract class Animal {
     public void getName(){
         System.out.println(this.name);
     }
+    public void add(Animal animal){
+
+    }
 }

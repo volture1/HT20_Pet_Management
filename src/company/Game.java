@@ -1,5 +1,5 @@
 package company;
-
+import java.util.*;
 
 import java.util.Scanner;
 
@@ -11,6 +11,7 @@ public class Game {
         Store store = new Store();
         startMenu();
         newGame();
+
 
 
 
@@ -51,6 +52,7 @@ public class Game {
             System.out.println(player.getPlayerName());
         }
 
+
         //A loop for each round for each player.
         //first loop will go to 1, then it will loop through ALL players until it will go to 2....
         for(var round = 1; round <= totalRounds; round++){
@@ -74,7 +76,7 @@ public class Game {
 
         switch(choice){
             case 1:
-                store.animalPurchase();
+                //store.animalPurchase();
                 break;
             case 2:
                 store.foodPurchase();
@@ -102,9 +104,7 @@ public class Game {
                 break;
 
         }
-        String rep = "\n";
-        System.out.print(rep.repeat(60));
-
+        System.out.print("\n".repeat(60));
     }
 
 }
