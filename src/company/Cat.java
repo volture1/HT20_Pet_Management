@@ -3,7 +3,7 @@ package company;
 public class Cat extends Animal {
     public static int initialPrice = 1000;
     public Cat(String name, String gender){
-        super(100, name, gender);
+        super(name, gender);
     }
 
 

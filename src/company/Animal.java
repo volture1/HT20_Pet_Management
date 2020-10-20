@@ -1,23 +1,23 @@
 package company;
 
 public abstract class Animal {
-    private int health;
+    public int health = 100;
     private String name,gender;
 
-    public Animal(int health, String name, String gender ){
-        this.health = health;
+    public Animal(String name, String gender ){
         this.name = name;
         this.gender = gender;
     }
 
-    public void getHealth(int health){
-        health = this.health;
+    public int getHealth(){
+        return this.health;
     }
 
-    public void getName(){
-        System.out.println(this.name);
+    public String getName(){
+        return this.name;
     }
-    public void add(Animal animal){
 
-    }
+    /*public void add(Animal animal){
+
+    }*/
 }
