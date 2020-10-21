@@ -3,6 +3,7 @@ package company;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Player {
     private String playerName;
@@ -12,6 +13,7 @@ public class Player {
     public ArrayList<Animal> animals = new ArrayList<Animal>();
     public ArrayList<Food> foods = new ArrayList<Food>();
     //Constructor for the player
+
     public Player(String name){
         playerName = name;
     }
@@ -49,6 +51,42 @@ public class Player {
         for(var key : animalsToDelete){
             animals.remove(key);
         }
+    }
+
+    public void feedAnimal(Player player){
+        Scanner input = new Scanner(System.in);
+        var foodToDelete = new ArrayList<Food>();
+        if(player.animals.size() > 0 && player.foods.size() > 0){
+            System.out.println("Select which animal you would like to feed");
+            int x = 0, y = 0;
+            for(var animal : animals){
+                System.out.println(x + " " + animal.getName() + " has " + animal.getHealth() + "% health");
+                x++;
+            }
+            int animalChoice = input.nextInt();
+
+            System.out.println("Select which food you would like to feed your animal with ");
+            for(var food :  foods){
+                System.out.println(y + " 1kg of " + food.getName());
+                y++;
+            }
+            int foodChoice = input.nextInt();
+
+            animals.get(animalChoice).health = animals.get(animalChoice).health + foods.get(foodChoice).getHealthPoints();
+            foods.get(foodChoice).healthPoints =+ animals.get(animalChoice).health;
+            foodToDelete.add(foods.get(foodChoice));
+            for(var key : foodToDelete){
+                foods.remove(key);
+            }
+            System.out.println("-------------------");
+            System.out.println(animals.get(animalChoice).getName() + " now has " + animals.get(animalChoice).health + "% health \n");
+            //first select food then ( later on check if allowed food)
+
+
+        }else {
+            System.out.println("You either don't have animals or don't have food.");
+        }
+
     }
     public void healthDecay(){
         for (var animal : animals){

@@ -92,16 +92,20 @@ public class Game {
             switch(choice){
                 case 1:
                     store.animalPurchase(player);
+                    break;
                 case 2:
                     store.foodPurchase(player);
+                    break;
                 case 3:
+                    player.feedAnimal(player);
+                    break;
                     //player.feedAnimal();
                     //create feature that makes player own animal objects.
                     //sout("select animal to feed");
                     //-- select object
                     //sout("select food to feed animal with");
                     //--select food to feed animal with (+10 hp to animal)
-                    break;
+
                 case 4:
                     //--print list of animals--
                     //sout("please select two animals to breed, one of each gender")
