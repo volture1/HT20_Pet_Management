@@ -137,7 +137,6 @@ public class Store {
                 }
                 break;
         }
-
     }
      private String rollGender() {
          Random rand = new Random();
@@ -151,7 +150,5 @@ public class Store {
          else{
              return null;
          }
-
      }
-
 }

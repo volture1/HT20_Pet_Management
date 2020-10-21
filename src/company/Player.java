@@ -52,6 +52,28 @@ public class Player {
             animals.remove(key);
         }
     }
+    public void breedAnimal(Player player){
+        Scanner input = new Scanner(System.in);
+        int animal2;
+        int animal1;
+        do{
+            int x = 0;
+            for(var animal : animals){
+                System.out.println(x + " " + animal.getName());
+                x++;
+            }
+            System.out.println("Pick the first animal to breed");
+             animal1 = input.nextInt();
+            System.out.println("Pick the second animal to breed with");
+             animal2 = input.nextInt();
+
+        }while(animal1 == animal2);
+
+
+        System.out.println("You bred " + animals.get(animal1).getName() + " with " + animals.get(animal2).getName());
+        System.out.println("Please type the name of the new animal: ");
+        String babyName = input.nextLine();
+    }
 
     public void feedAnimal(Player player){
         Scanner input = new Scanner(System.in);
