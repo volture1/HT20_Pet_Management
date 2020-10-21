@@ -97,7 +97,43 @@ public class Store {
         }
 
     }
-    public void foodPurchase(){
+    public void foodPurchase(Player player){
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("--Food shop--\n" +
+                "[1] 50$/kg Fish food\n" +
+                "[2] 75$/kg Carrot\n" +
+                "[3] 150$/kg Meat\n");
+        int choice = input.nextInt();
+        switch(choice) {
+            case 1:
+                if(player.playerMoney > 50){
+                    System.out.println("You bought 1 kg of fish food for $50!");
+                    player.foods.add(new FishFood());
+                }else {
+                    System.out.println("Insufficient funds. Your balance is $" + player.playerMoney +
+                            " and the food you wanted to purchase costs $50");
+                }
+                break;
+            case 2:
+                if(player.playerMoney > 75){
+                    System.out.println("You bought 1 kg of carrots for $50!");
+                    player.foods.add(new Carrot());
+                }else {
+                    System.out.println("Insufficient funds. Your balance is $" + player.playerMoney +
+                            " and the food you wanted to purchase costs $75");
+                }
+                break;
+            case 3:
+                if(player.playerMoney > 150){
+                    System.out.println("You bought 1 kg of meat for $150!");
+                    player.foods.add(new Meat());
+                } else{
+                    System.out.println("Insufficient funds. Your balance is $" + player.playerMoney +
+                            " and the food you wanted to purchase costs $150");
+                }
+                break;
+        }
 
     }
      private String rollGender() {

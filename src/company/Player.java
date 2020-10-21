@@ -8,12 +8,15 @@ public class Player {
     private String playerName;
     public int playerMoney = 400;
 
-
+    //Creating the arraylists for each player
     public ArrayList<Animal> animals = new ArrayList<Animal>();
-
+    public ArrayList<Food> foods = new ArrayList<Food>();
+    //Constructor for the player
     public Player(String name){
         playerName = name;
     }
+
+    //Methods the player may use
     public int getCash() {
         return playerMoney;
     }
@@ -25,17 +28,13 @@ public class Player {
     public String getPlayerName() {
         return playerName;
     }
+
     public void removeCash(int cash){
         playerMoney = playerMoney - cash;
     }
+
     public void printAnimals(){
 
-
-        /*for (int i = animals.size() - 1; i <= 0 ; i--) {
-            if(animal < 1){
-                animals.remove(i);
-            }
-        }*/
         int id = 0;
         var animalsToDelete = new ArrayList<Animal>();
 
@@ -44,8 +43,7 @@ public class Player {
                 System.out.println(id+ " " + animal.getName() + " has " + animal.getHealth() + "% health");
                 id++;
             }else if(animal.health < 1){
-                //animals.remove(animal);
-                  animalsToDelete.add(animal);
+                animalsToDelete.add(animal);
             }
         }
         for(var key : animalsToDelete){

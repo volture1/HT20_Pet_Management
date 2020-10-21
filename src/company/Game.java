@@ -92,10 +92,8 @@ public class Game {
             switch(choice){
                 case 1:
                     store.animalPurchase(player);
-
                 case 2:
-                    store.foodPurchase();
-                    break;
+                    store.foodPurchase(player);
                 case 3:
                     //player.feedAnimal();
                     //create feature that makes player own animal objects.
