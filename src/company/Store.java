@@ -108,7 +108,8 @@ public class Store {
         switch(choice) {
             case 1:
                 if(player.playerMoney > 50){
-                    System.out.println("You bought 1 kg of fish food for $50!");
+                    player.removeCash(50);
+                    System.out.println("You bought 1 kg of fish food for $50 and your balance is now $"+ player.playerMoney);
                     player.foods.add(new FishFood("Fish food"));
                 }else {
                     System.out.println("Insufficient funds. Your balance is $" + player.playerMoney +
@@ -117,7 +118,8 @@ public class Store {
                 break;
             case 2:
                 if(player.playerMoney > 75){
-                    System.out.println("You bought 1 kg of carrots for $50!");
+                    player.removeCash(75);
+                    System.out.println("You bought 1 kg of carrots for $75 and your balance is now $"+ player.playerMoney);
                     player.foods.add(new Carrot("Carrot"));
                 }else {
                     System.out.println("Insufficient funds. Your balance is $" + player.playerMoney +
@@ -126,7 +128,8 @@ public class Store {
                 break;
             case 3:
                 if(player.playerMoney > 150){
-                    System.out.println("You bought 1 kg of meat for $150!");
+                    player.removeCash(150);
+                    System.out.println("You bought 1 kg of fish food for $150 and your balance is now $"+ player.playerMoney);
                     player.foods.add(new Meat("Meat"));
                 } else{
                     System.out.println("Insufficient funds. Your balance is $" + player.playerMoney +

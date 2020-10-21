@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c680ea1e-e79a-4060-8cc2-6629f174e8ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Carrot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Carrot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/FishFood.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/FishFood.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Food.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Meat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Meat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Carrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Carrot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/FishFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/FishFood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Meat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +157,13 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1603288004397</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="Added feeding menu&#10;Added feeding function&#10;small fixes to player class">
+      <created>1603299484003</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1603299484003</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -194,13 +188,14 @@
     <MESSAGE value="Started working with health % and death, but death is not working." />
     <MESSAGE value="Added function to remove animal when it has below 1% health." />
     <MESSAGE value="Added food purchase menu and foods being added to player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added food purchase menu and foods being added to player" />
+    <MESSAGE value="Added feeding menu&#10;Added feeding function&#10;small fixes to player class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added feeding menu&#10;Added feeding function&#10;small fixes to player class" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1603288003934">
+    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1603299483521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603288003934" />
+    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603299483521" />
     <state width="914" height="282" key="GridCell.Tab.0.bottom" timestamp="1603298980844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
