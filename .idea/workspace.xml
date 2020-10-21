@@ -3,9 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="c680ea1e-e79a-4060-8cc2-6629f174e8ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Cat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Cat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Dog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Fish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Fish.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Hamster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Hamster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Monkey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Monkey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Fish.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Hamster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Monkey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +183,13 @@
       <option name="presentableId" value="LOCAL−00016" />
       <updated>1603300090011</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL−00017" summary="Added basic feature of breeding animals">
+      <created>1603304666990</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1603304666990</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -198,29 +216,30 @@
     <MESSAGE value="Added food purchase menu and foods being added to player" />
     <MESSAGE value="Added feeding menu&#10;Added feeding function&#10;small fixes to player class" />
     <MESSAGE value="Fixed prints in store" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed prints in store" />
+    <MESSAGE value="Added basic feature of breeding animals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic feature of breeding animals" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1603300089551">
+    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1603304666523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603300089551" />
-    <state width="914" height="282" key="GridCell.Tab.0.bottom" timestamp="1603299887353">
+    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603304666523" />
+    <state width="914" height="282" key="GridCell.Tab.0.bottom" timestamp="1603312138330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603299887353" />
-    <state width="914" height="282" key="GridCell.Tab.0.center" timestamp="1603299887353">
+    <state width="914" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603312138330" />
+    <state width="914" height="282" key="GridCell.Tab.0.center" timestamp="1603312138330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603299887353" />
-    <state width="914" height="282" key="GridCell.Tab.0.left" timestamp="1603299887353">
+    <state width="914" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603312138330" />
+    <state width="914" height="282" key="GridCell.Tab.0.left" timestamp="1603312138330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603299887353" />
-    <state width="914" height="282" key="GridCell.Tab.0.right" timestamp="1603299887353">
+    <state width="914" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603312138330" />
+    <state width="914" height="282" key="GridCell.Tab.0.right" timestamp="1603312138330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603299887353" />
+    <state width="914" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603312138330" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603286323561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

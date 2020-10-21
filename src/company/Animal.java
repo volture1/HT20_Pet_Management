@@ -2,6 +2,7 @@ package company;
 
 public abstract class Animal {
     public int health = 100;
+    public int initialPrice;
     private String name,gender;
 
     public Animal(String name, String gender ){
@@ -15,6 +16,9 @@ public abstract class Animal {
 
     public String getName(){
         return this.name;
+    }
+    public int getInitialPrice(){
+        return this.initialPrice;
     }
 
     /*public void add(Animal animal){

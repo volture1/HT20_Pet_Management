@@ -35,6 +35,36 @@ public class Player {
         playerMoney = playerMoney - cash;
     }
 
+    public void sellAnimal(Player player){
+        Scanner input = new Scanner(System.in);
+        var animalsToDelete = new ArrayList<Animal>();
+        int x = 0;
+        System.out.println("-Select which animal you want to sell-");
+        for (var animal : animals){
+            System.out.println(x + " " + animal.getName() + " is currently worth $"
+                    + (animal.getInitialPrice() * animal.getHealth()));
+            x++;
+        }
+        int choice = input.nextInt();
+        int price = animals.get(choice).getInitialPrice() * animals.get(choice).getHealth();
+        player.playerMoney = price + player.playerMoney;
+        System.out.println("--------------------------\n" +
+                            "You just sold " + animals.get(choice).getName() + " for $"
+                            + (animals.get(choice).getInitialPrice() * animals.get(choice).getHealth()));
+        System.out.println("Your new balance is $" + player.playerMoney);
+        System.out.println("---------------------------");
+        animalsToDelete.add(animals.get(choice));
+        /*for(var key : animals){
+            animals.remove(key);
+        }*/
+        for(var i = animals.size() - 1;  i >= 0; i--){
+
+            if(i == choice){
+                animals.remove(choice);
+            }
+        }
+    }
+
     public void printAnimals(){
 
         int id = 0;

@@ -103,7 +103,7 @@ public class Game {
                     player.breedAnimal(player);
                     break;
                 case 5:
-                    //player.sellAnimal
+                    player.sellAnimal(player);
                     //player will sell their animal object for money.
                     break;
                 case 6:
