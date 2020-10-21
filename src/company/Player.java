@@ -1,6 +1,7 @@
 package company;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Random;
 
 public class Player {
@@ -28,15 +29,27 @@ public class Player {
         playerMoney = playerMoney - cash;
     }
     public void printAnimals(){
-        int id = 1;
-        for (var Animal : animals){
-            if(Animal.health > 1){
-                System.out.println(id+ " " + Animal.getName() + " has " + Animal.getHealth() + "% health");
-                id++;
-            }else if(Animal.health < 1){
-                animals.remove(Animal);
-            }
 
+
+        /*for (int i = animals.size() - 1; i <= 0 ; i--) {
+            if(animal < 1){
+                animals.remove(i);
+            }
+        }*/
+        int id = 0;
+        var animalsToDelete = new ArrayList<Animal>();
+
+        for (var animal : animals){
+            if(animal.health > 1){
+                System.out.println(id+ " " + animal.getName() + " has " + animal.getHealth() + "% health");
+                id++;
+            }else if(animal.health < 1){
+                //animals.remove(animal);
+                  animalsToDelete.add(animal);
+            }
+        }
+        for(var key : animalsToDelete){
+            animals.remove(key);
         }
     }
     public void healthDecay(){
