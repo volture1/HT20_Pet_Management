@@ -1,29 +1,15 @@
-
 package company;
 
-
-import jdk.swing.interop.SwingInterOpUtils;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Game {
 
-
     public Game(){
-
         System.out.println("Work in progress.");
         Store store = new Store();
-        //Player[] playerNames = new Player[];
-        //ArrayList<Player> playerNamess = new ArrayList<Player>();
         startMenu();
         newGame();
-
-
-
-
-
     }
 
     static void startMenu(){
@@ -33,9 +19,6 @@ public class Game {
         System.out.println("Created by Tobias Östergren for Teknikhögskolan HT20");
         System.out.println("-------------------------------------------------------");
         System.out.println();
-
-
-
     }
      void newGame(){
         Scanner input = new Scanner(System.in);
@@ -88,7 +71,9 @@ public class Game {
                     "[4] Breed Animal\n" +
                     "[5] Sell Animal\n" +
                     "[6] End round");
-            int choice = input.nextInt();
+            int choice = 0;
+            player.choiceCheck(choice);
+
             switch(choice){
                 case 1:
                     store.animalPurchase(player);
