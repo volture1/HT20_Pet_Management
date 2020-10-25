@@ -1,6 +1,7 @@
 package company;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -36,16 +37,22 @@ public class Player {
 
     public int choiceCheck(int choice){
         Scanner input = new Scanner(System.in);
-         choice = 1;
-        boolean success = false;
-        while (!success) {
+
+        boolean continueLoope = false;
+        while (!continueLoope) {
             try {
                 choice = input.nextInt();
-                success = true;
+                //input.nextLine();
+                continueLoope = true;
             }
-            catch(Exception e) {
+            catch(InputMismatchException e) {
                 System.out.println("Wrong type of input");
-                input.nextLine();
+                //input.nextLine();
+                //^ This is stopping the while loop but it also
+                //HOps over the players choice, and keeps it as the last
+                //thing that was pressed in.
+                input.next(); // clear scanner wrong input
+                continue; // continues to loop if exception is found
             }
         }
         return choice;
@@ -61,7 +68,8 @@ public class Player {
                     + (animal.getInitialPrice() * animal.getHealth()));
             x++;
         }
-        int choice = input.nextInt();
+        int choice = 0;
+        tryCatchingNumbers(choice);
         int price = animals.get(choice).getInitialPrice() * animals.get(choice).getHealth();
         player.playerMoney = price + player.playerMoney;
         System.out.println("--------------------------\n" +
@@ -161,14 +169,16 @@ public class Player {
                 System.out.println(x + " " + animal.getName() + " has " + animal.getHealth() + "% health");
                 x++;
             }
-            int animalChoice = input.nextInt();
+            int animalChoice = 0;
+            tryCatchingNumbers(animalChoice);
             System.out.println("Select which food you would like to feed your animal with ");
 
             for(var food :  foods){
                 System.out.println(y + " 1kg of " + food.getName());
                 y++;
             }
-            int foodChoice = input.nextInt();
+            int foodChoice = 0;
+            tryCatchingNumbers(foodChoice);
             animals.get(animalChoice).health = animals.get(animalChoice).health + foods.get(foodChoice).getHealthPoints();
             foods.get(foodChoice).healthPoints =+ animals.get(animalChoice).health;
             foodToDelete.add(foods.get(foodChoice));
@@ -206,6 +216,29 @@ public class Player {
         else{
             return null;
         }
+    }
+    public int tryCatchingNumbers(int choice){
+        Scanner input = new Scanner(System.in);
+         choice = 0;
+        boolean continueLoope = false;
+        boolean choiceInRange = true;
+        while (!continueLoope) {
+            try {
+                choice = input.nextInt();
+                if(choice <= animals.size()){
+                    continueLoope = true;
+                }
+                else{
+                    System.out.println("The number you typed is outside the array of animals.");
+                    continue;
+                }
+            }
+            catch(InputMismatchException e) {
+                System.out.println("Wrong type of input");
+                input.next(); // clear scanner wrong input
+            }
+        }
+        return choice;
     }
 
 

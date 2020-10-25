@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c680ea1e-e79a-4060-8cc2-6629f174e8ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Cat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Cat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Dog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Fish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Fish.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Hamster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Hamster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Monkey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Monkey.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Fish.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Hamster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Monkey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Store.java" afterDir="false" />
     </list>
@@ -197,7 +184,13 @@
       <option name="presentableId" value="LOCAL−00018" />
       <updated>1603312752540</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL−00019" summary="Added feature to breed animals, &#10;First &quot;full&quot; build of the game">
+      <created>1603387372821</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1603387372821</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -226,29 +219,30 @@
     <MESSAGE value="Fixed prints in store" />
     <MESSAGE value="Added basic feature of breeding animals" />
     <MESSAGE value="Added feature to sell animals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added feature to sell animals" />
+    <MESSAGE value="Added feature to breed animals, &#10;First &quot;full&quot; build of the game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added feature to breed animals, &#10;First &quot;full&quot; build of the game" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1603312752007">
+    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1603387372117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603312752007" />
-    <state width="914" height="279" key="GridCell.Tab.0.bottom" timestamp="1603363244451">
+    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603387372117" />
+    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1603632244140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603363244451" />
-    <state width="914" height="279" key="GridCell.Tab.0.center" timestamp="1603363244451">
+    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603632244140" />
+    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1603632244140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603363244451" />
-    <state width="914" height="279" key="GridCell.Tab.0.left" timestamp="1603363244451">
+    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603632244140" />
+    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1603632244140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603363244451" />
-    <state width="914" height="279" key="GridCell.Tab.0.right" timestamp="1603363244451">
+    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603632244140" />
+    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1603632244140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603363244451" />
+    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603632244140" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603286323561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -257,10 +251,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="987" y="259" width="906" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1603282460830" />
-    <state x="602" y="206" key="new project wizard" timestamp="1603377089915">
+    <state x="973" y="0" width="726" height="712" key="dock-window-1" timestamp="1603622920136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="602" y="206" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1603377089915" />
+    <state x="973" y="0" width="726" height="712" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1603622920136" />
+    <state x="602" y="206" key="new project wizard" timestamp="1603623222175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="602" y="206" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1603623222175" />
+    <state x="1096" y="244" key="run.anything.popup" timestamp="1603626693964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1096" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603626693964" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

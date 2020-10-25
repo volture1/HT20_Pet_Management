@@ -1,5 +1,6 @@
 package company;
 
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 //-----------MUNDANE THINGS TO FIX----------------------
@@ -23,7 +24,40 @@ public class Store {
                 "[5] 700$ Monkey");
 
         int choice = 1;
-        player.choiceCheck(choice);
+        //player.choiceCheck(choice);
+        boolean continueLoope = false;
+        /*while (!continueLoope) {
+            try {
+                choice = Integer.parseInt(input.nextLine());
+                //input.nextLine();
+                continueLoope = true;
+            }
+            catch(InputMismatchException e) {
+                System.out.println("Wrong type of input");
+                //input.nextLine();
+                //^ This is stopping the while loop but it also
+                //HOps over the players choice, and keeps it as the last
+                //thing that was pressed in.
+                //input.next(); // clear scanner wrong input
+                continue; // continues to loop if exception is found
+            }
+        */
+        while (!continueLoope) {
+            try {
+                choice = input.nextInt();
+                //input.nextLine();
+                continueLoope = true;
+            }
+            catch(InputMismatchException e) {
+                System.out.println("Wrong type of input");
+                //input.nextLine();
+                //^ This is stopping the while loop but it also
+                //HOps over the players choice, and keeps it as the last
+                //thing that was pressed in.
+                input.next(); // clear scanner wrong input
+                continue; // continues to loop if exception is found
+            }
+        }
         switch (choice) {
             case 1:
                 if(player.playerMoney >= 100){
@@ -44,7 +78,7 @@ public class Store {
                     System.out.println("Name your new Hamster: ");
                     var name = input.next();
                     var gender = player.rollGender();
-                    player.animals.add(new Hamster( name, gender));
+                    player.animals.add(new Hamster(name, gender));
                     player.removeCash(200);
                     System.out.println("You bought a " + gender + " hamster called " + name + " for $200");
                     System.out.println("Your balance is $" + player.playerMoney);
@@ -108,7 +142,24 @@ public class Store {
                 "[3] 150$/kg Meat\n");
 
         int choice = 1;
-        player.choiceCheck(choice);
+        //player.choiceCheck(choice);
+        boolean continueLoope = false;
+        while (!continueLoope) {
+            try {
+                choice = input.nextInt();
+                //input.nextLine();
+                continueLoope = true;
+            }
+            catch(InputMismatchException e) {
+                System.out.println("Wrong type of input");
+                //input.nextLine();
+                //^ This is stopping the while loop but it also
+                //HOps over the players choice, and keeps it as the last
+                //thing that was pressed in.
+                input.next(); // clear scanner wrong input
+                continue; // continues to loop if exception is found
+            }
+        }
         switch(choice) {
             case 1:
                 if(player.playerMoney > 50){

@@ -1,5 +1,6 @@
 package company;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -71,9 +72,19 @@ public class Game {
                     "[4] Breed Animal\n" +
                     "[5] Sell Animal\n" +
                     "[6] End round");
-            int choice = 0;
-            player.choiceCheck(choice);
-
+            int choice = 1;
+            boolean continueLoope = false;
+            while (!continueLoope) {
+                try {
+                    choice = input.nextInt();
+                    continueLoope = true;
+                }
+                catch(InputMismatchException e) {
+                    System.out.println("Wrong type of input");
+                    input.next(); // clear scanner wrong input
+                    continue;
+                }
+            }
             switch(choice){
                 case 1:
                     store.animalPurchase(player);
