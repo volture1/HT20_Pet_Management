@@ -24,24 +24,8 @@ public class Store {
                 "[5] 700$ Monkey");
 
         int choice = 1;
-        //player.choiceCheck(choice);
         boolean continueLoope = false;
-        /*while (!continueLoope) {
-            try {
-                choice = Integer.parseInt(input.nextLine());
-                //input.nextLine();
-                continueLoope = true;
-            }
-            catch(InputMismatchException e) {
-                System.out.println("Wrong type of input");
-                //input.nextLine();
-                //^ This is stopping the while loop but it also
-                //HOps over the players choice, and keeps it as the last
-                //thing that was pressed in.
-                //input.next(); // clear scanner wrong input
-                continue; // continues to loop if exception is found
-            }
-        */
+
         while (!continueLoope) {
             try {
                 choice = input.nextInt();

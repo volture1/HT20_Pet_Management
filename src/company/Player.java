@@ -1,9 +1,6 @@
 package company;
 
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Player {
     private String playerName;
@@ -169,11 +166,20 @@ public class Player {
                 System.out.println(x + " " + animal.getName() + " has " + animal.getHealth() + "% health");
                 x++;
             }
+
             int animalChoice = 0;
             tryCatchingNumbers(animalChoice);
+
+
+            if(animals.get(animalChoice).getType().contains("Cat")){
+                for (var food : foods){
+                    food.getType().equals("Meat");
+
+                }
+            }
             System.out.println("Select which food you would like to feed your animal with ");
 
-            for(var food :  foods){
+            /*for(var food :  foods){
                 System.out.println(y + " 1kg of " + food.getName());
                 y++;
             }
@@ -191,7 +197,7 @@ public class Player {
             //first select food then ( later on check if allowed food)
 
         }else {
-            System.out.println("You either don't have animals or don't have food.");
+            System.out.println("You either don't have animals or don't have food.");*/
         }
 
     }
@@ -240,10 +246,16 @@ public class Player {
         }
         return choice;
     }
+    public static Comparator<Player> PlayerCash = new Comparator<Player>() {
 
+        @Override
+        public int compare(Player o1, Player o2) {
+            int cash1 = o1.getCash();
+            int cash2 = o1.getCash();
 
-    }
-
-
+            return cash1-cash2;
+        }
+    };
+}
 
 

@@ -1,8 +1,6 @@
 package company;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-import java.util.ArrayList;
+import java.util.*;
 
 public class Game {
 
@@ -23,6 +21,68 @@ public class Game {
     }
      void newGame(){
         Scanner input = new Scanner(System.in);
+
+        var totalRounds = Dialogs.promptInt("Enter how many rounds you would like to play (5-30)", 5,30);
+        var playerAmount = Dialogs.promptInt("Enter the amount of players (1-4)", 1,4);
+
+
+         ArrayList<Player> playerNames = new ArrayList<Player>();
+
+         for (int i = 1; i < playerAmount + 1; i++) {
+             System.out.println("Player number [" + i + "] please enter your name: ");
+             String name = input.nextLine();
+             playerNames.add(new Player(name));
+         }
+
+         System.out.println("-Players-");
+         for (Player player: playerNames){
+             System.out.println(player.getPlayerName());
+         }
+
+         for(var round = 1; round <= totalRounds; round++){
+             for (Player player: playerNames){
+                 System.out.println("Runda " + round + " av " + totalRounds + ", spelare " + player.getPlayerName() + ":s tur...");
+                 gameLoop(player);
+             }
+         }
+         System.out.println("-----------------------------\n" +
+                 "          GAME OVER\n" +
+                 "-----------------------------\n" +
+                 "         -Score board-");
+         for (Player player : playerNames){
+             for(Animal animal : player.animals){
+                 int price = animal.getInitialPrice() * animal.getHealth();
+                 player.playerMoney = price + player.playerMoney;
+
+             }
+         }
+         playerNames.sort((Player a, Player b) -> { return a.playerMoney > b.playerMoney ? -1 : 1; });
+         int id = 1;
+         for(Player player: playerNames){
+             System.out.println("[" + id + "] $" + player.playerMoney + " - " +  player.getPlayerName());
+             id++;
+         }
+         System.out.println("-------------------------------");
+         System.out.println("Play again? \n" +
+                            "[1] Yes\n" +
+                            "[2] No");
+         int again = input.nextInt();
+         switch(again){
+             case 1:
+                 newGame();
+                 break;
+             case 2:
+                 break;
+             default:
+                 break;
+         }
+
+
+
+          //---------------------------------------------------------------
+         //---------------------------------------------------------------
+        //---------------------------------------------------------------
+        /*Scanner input = new Scanner(System.in);
         var totalRounds = Dialogs.promptInt("Enter how many rounds you would like to play (5-30)", 5,30);
         var playerAmount = Dialogs.promptInt("Enter the amount of players (1-4)", 1,4);
 
@@ -31,6 +91,7 @@ public class Game {
         System.out.println("Amount of players: " + playerAmount);
 
         Player[] playerNames = new Player[playerAmount];
+         // ArrayList<Player> playerNames = new ArrayList<Player>();
 
         // Setting player names
         for (int i = 1; i < playerAmount + 1; i++) {
@@ -54,6 +115,11 @@ public class Game {
                 gameLoop(player);
             }
         }
+         System.out.println("-----------------------------\n" +
+                            "          GAME OVER\n" +
+                            "-----------------------------\n" +
+                            "");
+          */
     }
     static void gameLoop(Player player){
 

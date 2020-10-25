@@ -4,6 +4,7 @@ public abstract class Food {
     public int foodPrice;
     public int healthPoints;
     private String name;
+    public String type;
 
 
     public Food(String name){
@@ -15,4 +16,8 @@ public abstract class Food {
     public int getHealthPoints(){
        return this.healthPoints;
     }
+    public String getType(){
+        return this.type;
+    }
+
 }
