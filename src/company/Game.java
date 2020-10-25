@@ -23,6 +23,7 @@ public class Game {
         var totalRounds = Dialogs.promptInt("Enter how many rounds you would like to play (5-30)", 5,30);
         var playerAmount = Dialogs.promptInt("Enter the amount of players (1-4)", 1,4);
          ArrayList<Player> playerNames = new ArrayList<Player>();
+         ArrayList<Player> removePlayer = new ArrayList<Player>();
 
          for (int i = 1; i < playerAmount + 1; i++) {
              System.out.println("Player number [" + i + "] please enter your name: ");
@@ -39,6 +40,13 @@ public class Game {
              for (Player player: playerNames){
                  System.out.println("Runda " + round + " av " + totalRounds + ", spelare " + player.getPlayerName() + ":s tur...");
                  gameLoop(player);
+                 if(player.playerMoney < 49 && player.animals.size() == 0){
+                     removePlayer.add(player);
+                     for(var key : removePlayer){
+                        playerNames.remove(key);
+                     }
+                 }
+
              }
          }
          System.out.println("-----------------------------\n" +

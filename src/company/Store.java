@@ -1,7 +1,6 @@
 package company;
 
 import java.util.InputMismatchException;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Store {
@@ -48,7 +47,7 @@ public class Store {
                 }
                 break;
             case 2:
-                if(player.playerMoney > 200){
+                if(player.playerMoney >= 200){
                     System.out.println("Name your new Hamster: ");
                     var name = input.next();
                     var gender = player.rollGender();
@@ -63,7 +62,7 @@ public class Store {
                 }
                 break;
             case 3:
-                if(player.playerMoney > 350) {
+                if(player.playerMoney >= 350) {
                     System.out.println("Name your new cat: ");
                     var name = input.next();
                     var gender = player.rollGender();
@@ -77,7 +76,7 @@ public class Store {
                 }
                 break;
             case 4:
-                if(player.playerMoney > 500){
+                if(player.playerMoney >= 500){
                     System.out.println("Name your new dog: ");
                     var name = input.next();
                     var gender = player.rollGender();
@@ -91,7 +90,7 @@ public class Store {
                 }
                 break;
             case 5:
-                if(player.playerMoney > 700){
+                if(player.playerMoney >= 700){
                     System.out.println("Name your new Monkey: ");
                     var name = input.next();
                     var gender = player.rollGender();
@@ -130,7 +129,7 @@ public class Store {
         }
         switch(choice) {
             case 1:
-                if(player.playerMoney > 50){
+                if(player.playerMoney >= 50){
                     player.removeCash(50);
                     System.out.println("You bought 1 kg of fish food for $50 and your balance is now $"+ player.playerMoney);
                     player.foods.add(new FishFood("Fish food"));
@@ -140,7 +139,7 @@ public class Store {
                 }
                 break;
             case 2:
-                if(player.playerMoney > 75){
+                if(player.playerMoney >= 75){
                     player.removeCash(75);
                     System.out.println("You bought 1 kg of carrots for $75 and your balance is now $"+ player.playerMoney);
                     player.foods.add(new Carrot("Carrot"));
@@ -150,7 +149,7 @@ public class Store {
                 }
                 break;
             case 3:
-                if(player.playerMoney > 150){
+                if(player.playerMoney >= 150){
                     player.removeCash(150);
                     System.out.println("You bought 1 kg of fish food for $150 and your balance is now $"+ player.playerMoney);
                     player.foods.add(new Meat("Meat"));

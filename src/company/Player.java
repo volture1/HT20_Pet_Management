@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Player {
     private String playerName;
-    public int playerMoney = 10000;
+    public int playerMoney = 200;
 
     //Creating the arraylists for each player
     public ArrayList<Animal> animals = new ArrayList<Animal>();

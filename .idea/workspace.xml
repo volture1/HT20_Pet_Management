@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c680ea1e-e79a-4060-8cc2-6629f174e8ca" name="Default Changelist" comment="Fixed scoreboard and selling all animals.">
+    <list default="true" id="c680ea1e-e79a-4060-8cc2-6629f174e8ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Store.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +209,13 @@
       <option name="presentableId" value="LOCAL−00021" />
       <updated>1603647484282</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL−00022" summary="Fixed so that animals can only eat their type.">
+      <created>1603654951736</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1603654951736</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -239,37 +247,38 @@
     <MESSAGE value="Added feature to breed animals, &#10;First &quot;full&quot; build of the game" />
     <MESSAGE value="Fixed try catch on all inputs" />
     <MESSAGE value="Fixed scoreboard and selling all animals." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed scoreboard and selling all animals." />
+    <MESSAGE value="Fixed so that animals can only eat their type." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed so that animals can only eat their type." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1245" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1603645547442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1245" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603645547442" />
-    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1603647498291">
+    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1603654951164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603647498291" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1603654668893">
+    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603654951164" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1603659720840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603654668893" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1603654668892">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603659720840" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1603659720840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603654668892" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1603654668892">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603659720840" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1603659720840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603654668892" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1603654668893">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603659720840" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1603659720840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603654668893" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603647502766">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603659720840" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603655238048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603647502766" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603655238048" />
     <state x="987" y="259" width="906" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603282460830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
