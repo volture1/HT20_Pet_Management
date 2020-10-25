@@ -3,16 +3,11 @@ package company;
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
-//-----------MUNDANE THINGS TO FIX----------------------
-//1. The male/female roll on all bought animals : DONE
-//2. The purchase sequence on every animal : DONE
-//3.--
+
 public class Store {
 
     public Store(){
-
     }
-
     public void animalPurchase(Player player) {
         Scanner input = new Scanner(System.in);
 
@@ -29,17 +24,12 @@ public class Store {
         while (!continueLoope) {
             try {
                 choice = input.nextInt();
-                //input.nextLine();
                 continueLoope = true;
             }
             catch(InputMismatchException e) {
                 System.out.println("Wrong type of input");
-                //input.nextLine();
-                //^ This is stopping the while loop but it also
-                //HOps over the players choice, and keeps it as the last
-                //thing that was pressed in.
-                input.next(); // clear scanner wrong input
-                continue; // continues to loop if exception is found
+                input.next();
+                continue;
             }
         }
         switch (choice) {
@@ -115,7 +105,6 @@ public class Store {
                 }
                 break;
         }
-
     }
     public void foodPurchase(Player player){
         Scanner input = new Scanner(System.in);
@@ -126,22 +115,17 @@ public class Store {
                 "[3] 150$/kg Meat\n");
 
         int choice = 1;
-        //player.choiceCheck(choice);
         boolean continueLoope = false;
         while (!continueLoope) {
             try {
                 choice = input.nextInt();
-                //input.nextLine();
+
                 continueLoope = true;
             }
             catch(InputMismatchException e) {
                 System.out.println("Wrong type of input");
-                //input.nextLine();
-                //^ This is stopping the while loop but it also
-                //HOps over the players choice, and keeps it as the last
-                //thing that was pressed in.
-                input.next(); // clear scanner wrong input
-                continue; // continues to loop if exception is found
+                input.next();
+                continue;
             }
         }
         switch(choice) {
@@ -177,5 +161,4 @@ public class Store {
                 break;
         }
     }
-
 }

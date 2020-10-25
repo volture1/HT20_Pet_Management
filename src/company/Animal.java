@@ -27,7 +27,5 @@ public abstract class Animal {
     }
 
 
-    /*public void add(Animal animal){
 
-    }*/
 }

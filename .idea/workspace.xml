@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c680ea1e-e79a-4060-8cc2-6629f174e8ca" name="Default Changelist" comment="">
+    <list default="true" id="c680ea1e-e79a-4060-8cc2-6629f174e8ca" name="Default Changelist" comment="Fixed scoreboard and selling all animals.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Carrot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Carrot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/FishFood.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/FishFood.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Food.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Meat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Meat.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pet Management/company/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pet Management/company/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Carrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Carrot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/FishFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/FishFood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Meat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +201,13 @@
       <option name="presentableId" value="LOCAL−00020" />
       <updated>1603632472337</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL−00021" summary="Fixed scoreboard and selling all animals.">
+      <created>1603647484282</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1603647484282</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -241,37 +238,38 @@
     <MESSAGE value="Added feature to sell animals" />
     <MESSAGE value="Added feature to breed animals, &#10;First &quot;full&quot; build of the game" />
     <MESSAGE value="Fixed try catch on all inputs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed try catch on all inputs" />
+    <MESSAGE value="Fixed scoreboard and selling all animals." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed scoreboard and selling all animals." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1245" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1603645547442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1245" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603645547442" />
-    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1603632471741">
+    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1603647498291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603632471741" />
-    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1603647105641">
+    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603647498291" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1603654668893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603647105641" />
-    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1603647105641">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603654668893" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1603654668892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603647105641" />
-    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1603647105641">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603654668892" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1603654668892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603647105641" />
-    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1603647105641">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603654668892" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1603654668893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603647105641" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603286323561">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603654668893" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603647502766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603286323561" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603647502766" />
     <state x="987" y="259" width="906" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603282460830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

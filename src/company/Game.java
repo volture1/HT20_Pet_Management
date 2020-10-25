@@ -5,7 +5,6 @@ import java.util.*;
 public class Game {
 
     public Game(){
-        System.out.println("Work in progress.");
         Store store = new Store();
         startMenu();
         newGame();
@@ -21,11 +20,8 @@ public class Game {
     }
      void newGame(){
         Scanner input = new Scanner(System.in);
-
         var totalRounds = Dialogs.promptInt("Enter how many rounds you would like to play (5-30)", 5,30);
         var playerAmount = Dialogs.promptInt("Enter the amount of players (1-4)", 1,4);
-
-
          ArrayList<Player> playerNames = new ArrayList<Player>();
 
          for (int i = 1; i < playerAmount + 1; i++) {
@@ -76,50 +72,6 @@ public class Game {
              default:
                  break;
          }
-
-
-
-          //---------------------------------------------------------------
-         //---------------------------------------------------------------
-        //---------------------------------------------------------------
-        /*Scanner input = new Scanner(System.in);
-        var totalRounds = Dialogs.promptInt("Enter how many rounds you would like to play (5-30)", 5,30);
-        var playerAmount = Dialogs.promptInt("Enter the amount of players (1-4)", 1,4);
-
-        System.out.println("----RULES----");
-        System.out.println("Amount of rounds: " + totalRounds);
-        System.out.println("Amount of players: " + playerAmount);
-
-        Player[] playerNames = new Player[playerAmount];
-         // ArrayList<Player> playerNames = new ArrayList<Player>();
-
-        // Setting player names
-        for (int i = 1; i < playerAmount + 1; i++) {
-            System.out.println("Player number [" + i + "] please enter your name: ");
-            String name = input.nextLine();
-            playerNames[i-1] = new Player(name);
-        }
-
-        //Printing player names
-        System.out.println("-Players-");
-        for (Player player: playerNames){
-            System.out.println(player.getPlayerName());
-        }
-
-
-        //A loop for each round for each player.
-        //first loop will go to 1, then it will loop through ALL players until it will go to 2....
-        for(var round = 1; round <= totalRounds; round++){
-            for (Player player: playerNames){
-                System.out.println("Runda " + round + " av " + totalRounds + ", spelare " + player.getPlayerName() + ":s tur...");
-                gameLoop(player);
-            }
-        }
-         System.out.println("-----------------------------\n" +
-                            "          GAME OVER\n" +
-                            "-----------------------------\n" +
-                            "");
-          */
     }
     static void gameLoop(Player player){
 
@@ -147,7 +99,7 @@ public class Game {
                 }
                 catch(InputMismatchException e) {
                     System.out.println("Wrong type of input");
-                    input.next(); // clear scanner wrong input
+                    input.next();
                     continue;
                 }
             }
@@ -166,18 +118,12 @@ public class Game {
                     break;
                 case 5:
                     player.sellAnimal(player);
-                    //player will sell their animal object for money.
                     break;
                 case 6:
-                    //Ends the round for the player.
                     player.healthDecay();
                     continueRound= false;
                     break;
             }
-            // System.out.print("\n".repeat(5));
         }while(continueRound);
-
-
     }
-
 }
